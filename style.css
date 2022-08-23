@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    font-family: sans-serif;
+}
+
+
+.main{
+    margin: 50px auto;
+    width: 800px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 120px 0;
+}
+
+.main-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.form-edit{
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #494949;
+    text-align: center;
+    padding: 15px 15px;
+    box-shadow: 0 0 3px #494949;
+}
+
+.opciones{
+    margin: 10px 0;
+    
+}
+
+.radio{
+    color: #007fd4;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.elige{
+    margin: 10px auto;
+}
+
+.radio-check{
+    color: #029f3e;
+    margin: 10px 0;
+}
+
+.ver-los{
+    margin: 10px auto;
+}
+
+.ver-los__title{
+   color: crimson;
+   font-size: 1rem;
+   font-weight: bold;
+   border-bottom: 1px solid crimson;
+}
+
+.form__submit{
+    background-color: #121212;
+    color: #fff;
+    margin: 15px auto;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.form__submit:hover{
+    color: #121212;
+    background-color: #999999;
+}
+
+.container{
+    width: 350px;
+    height: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 65px;
+    grid-template-areas: 
+    "t1 t1 t1 t1 t1"
+    "c1 c1 c2 c2 c2"
+    "c3 c4 c5 c5 c5"
+    "c6 c7 c8 c8 c8"
+    "c9 c10 c11 c11 c11"
+    "c12 c13 c14 c14 c14"
+    "c15 c16 c17 c17 c17"
+    "c18 c19 c20 c20 c20"
+    ;
+}
+
+.container__celda{
+    border: 1px solid #797979;
+    width: 100%;
+    height: 100%;
+}
+
+.color1{
+    background-color: #daefff;
+    border: 2px solid #797979;
+    text-align: center;
+}
+.color2{
+    background-color: #daffe8;
+    text-align: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 8px;
+}
+
+.text{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 10px 8px;
+}
+
+[data-numero]::before {
+    content: attr(data-numero);
+}
+
+
+
+.celdatitulo{
+    grid-area: t1;
+}
+
+.container__celda--c1{
+    grid-area: c1;
+}
+.container__celda--c2{
+    grid-area: c2;
+}
+
+.container__celda--c3{
+    grid-area: c3;
+}
+.container__celda--c4{
+    grid-area: c4;
+}
+.container__celda--c5{
+    grid-area: c5;
+}
+.container__celda--c6{
+    grid-area: c6;
+}
+.container__celda--c7{
+    grid-area: c7;
+}
+.container__celda--c8{
+    grid-area: c8;
+}
+.container__celda--c9{
+    grid-area: c9;
+}
+.container__celda--c10{
+    grid-area: c10;
+}
+.container__celda--c11{
+    grid-area: c11;
+}
+.container__celda--c12{
+    grid-area: c12;
+}
+.container__celda--c13{
+    grid-area: c13;
+}
+.container__celda--c14{
+    grid-area: c14;
+}
+.container__celda--c15{
+    grid-area: c15;
+}
+.container__celda--c16{
+    grid-area: c16;
+}
+.container__celda--c17{
+    grid-area: c17;
+}
+.container__celda--c18{
+    grid-area: c18;
+}
+.container__celda--c19{
+    grid-area: c19;
+}
+.container__celda--c20{
+    grid-area: c20;
+}
+
+
+.xor{
+    width: 350px;
+    height: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 65px;
+    grid-template-areas: 
+    "t1 t1 t1 t1 t1"
+    "x1 x1 x2 x2 x2"
+    "x3 x3 x4 x4 x4"
+    "x5 x5 x6 x6 x6"
+    "x7 x7 x8 x8 x8"
+    "x9 x9 x10 x10 x10"
+    ;
+    
+}
+
+
+
+.celdatitulox{
+    grid-area: t1;
+}
+
+.container__celda--x1{
+    grid-area: x1;
+}
+.container__celda--x2{
+    grid-area: x2;
+}
+
+.container__celda--x3{
+    grid-area: x3;
+}
+.container__celda--x4{
+    grid-area: x4;
+}
+.container__celda--x5{
+    grid-area: x5;
+}
+.container__celda--x6{
+    grid-area: x6;
+}
+.container__celda--x7{
+    grid-area: x7;
+}
+.container__celda--x8{
+    grid-area: x8;
+}
+.container__celda--x9{
+    grid-area: x9;
+}
+.container__celda--x10{
+    grid-area: x10;
+}
+
+
+
+
+pre{
+    margin: 25px 0;
+    background: #121212;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+pre::selection{
+    background: #4343437f;
+    color: #fff;
+}
+
+.activa{
+    display: none !important;
+}
+

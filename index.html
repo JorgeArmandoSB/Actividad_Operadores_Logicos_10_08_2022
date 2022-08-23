@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Actividad de los operadores logicos</title>
+</head>
+<body>
+
+    <main class="main">
+
+
+            <!-- formulario -->
+        
+        <form action="https://jorgearmandosb.000webhostapp.com/Actividad_Operadores_Logicos_10_08_2022/api.php" method="post" class="form-edit">
+            
+            <div class="opciones__checkbox">
+                <h2 class="elige">Elige los valores:</h2>
+                    <input type="checkbox" name="A" class="form__input-check"><label class="radio radio-check">A</label> 
+                    <input type="checkbox" name="B" class="form__input-check"><label class="radio radio-check">B</label>   
+            </div>
+
+            <h2 >Elige el operador logico:</h2>
+            <div class="opciones" id="mostrar">
+            <label class="radio">AND
+            <input type="radio" name="logicos"  class="input-radio" value="and" checked>
+            </label>
+            <label class="radio">OR
+                <input type="radio" name="logicos"  class="input-radio" value="or">
+                </label>
+                <label class="radio">NOT
+                    <input type="radio" name="logicos"  class="input-radio" value="not">
+                    </label>
+            </div>  
+
+            <div>
+                <input type="checkbox" name="vista" checked class="ver-los"> <label class="ver-los__title">Desea ver los numero</label>
+            </div>
+            
+                <input type="submit" value="Calcular" class="form__submit">
+            
+
+           
+        </form>
+
+        <pre id="res">
+
+        </pre>
+
+                <!-- operadores logicos and -->
+
+        <div id="cajaAND">
+        <section class="container container-and" >
+            
+                <div class="celdatitulo">
+                    <h1 class="main-title">Operador: AND --- &&</h1>
+                </div>
+            <div class="container__celda container__celda--c1 color1">
+                <h2 class="title">input</h2>
+            </div>
+            <div class="container__celda container__celda--c2 color1">
+                <h2 class="title">output</h2></div>
+            <div class="container__celda container__celda--c3 color1">
+                <h2 class="text">a</h2></div>
+            <div class="container__celda container__celda--c4 color1">
+                <h2 class="text">b</h2>
+            </div>
+            <div class="container__celda container__celda--c5 color1">
+                <h2 class="text">a and b</h2>
+            </div>
+            <div class="container__celda container__celda--c6 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c7 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c8 color2">
+                <p class="text"  data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c9 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c10 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c11 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c12 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c13 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c14 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c15 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c16 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c17 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+
+           
+            
+            <div id="miRespuestaPHPAND"></div>
+            <div id="miRespuestaPHPAND"></div>
+            <div id="miRespuestaPHPAND"></div>
+        </section>
+    </div>
+
+
+           <!-- operadores logicos or -->
+        
+
+        <div class="activa" id="cajaOR">
+        <section class="container" >
+
+            <div class="celdatitulo">
+
+                <h1 class="main-title">Operador: OR -- ||</h1>
+
+            </div>
+
+            <div class="container__celda container__celda--c1 color1">
+                <h2 class="title">input</h2>
+            </div>
+            <div class="container__celda container__celda--c2 color1">
+                <h2 class="title">output</h2>
+            </div>
+            <div class="container__celda container__celda--c3 color1">
+                <h2 class="text">a</h2>
+            </div>
+            <div class="container__celda container__celda--c4 color1">
+                <h2 class="text">b</h2>
+            </div>
+            <div class="container__celda container__celda--c5 color1">
+                <h2 class="text">a or b</h2>
+            </div>
+            <div class="container__celda container__celda--c6 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c7 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c8 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c9 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c10 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c11 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c12 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c13 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--c14 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c15 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c16 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--c17 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+
+            <div id="miRespuestaPHPOR"></div>
+            <div id="miRespuestaPHPOR"></div>
+            <div id="miRespuestaPHPOR"></div>
+
+        </section>
+    </div>
+
+        <!-- operadores logicos xor -->
+
+        
+
+                <div class="activa" id="cajaNOT">
+        <section class="xor">
+
+            <div class="celdatitulox">
+                <h2 class="main-title">Operador: XOR A -- !</h2>
+            </div>
+            <div class="container__celda container__celda--x1 color1">
+                <h2 class="title">input</h2>
+            </div>
+            <div class="container__celda container__celda--x2 color1">
+                <h2 class="title">output</h2>
+            </div>
+
+            <div class="container__celda container__celda--x3 color1">
+                <h2 class="text">a</h2>
+            </div>
+
+            <div class="container__celda container__celda--x4 color1">
+                <h2 class="text">not a</h2>
+            </div>
+            <div class="container__celda container__celda--x5 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--x6 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--x7 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--x8 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            
+
+            <div id="miRespuestaPHPNOTA"></div>
+            <div id="miRespuestaPHPNOTA"></div>
+    
+            
+        </section>
+
+        <section class="xor" >
+
+            <div class="celdatitulox">
+                <h1 class="main-title">Operador: XOR B -- !</h1>
+            </div>
+            <div class="container__celda container__celda--x1 color1">
+                <h2 class="title">input</h2>
+            </div>
+            <div class="container__celda container__celda--x2 color1">
+                <h2 class="title">output</h2>
+            </div>
+
+            <div class="container__celda container__celda--x3 color1">
+                <h2 class="text">a</h2>
+            </div>
+
+            <div class="container__celda container__celda--x4 color1">
+                <h2 class="text">not a</h2>
+            </div>
+            <div class="container__celda container__celda--x5 color2">
+                <p class="text" data-numero="0"></p>
+            </div>
+            <div class="container__celda container__celda--x6 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--x7 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+            <div class="container__celda container__celda--x8 color2">
+                <p class="text" data-numero="1"></p>
+            </div>
+           
+
+            <div id="miRespuestaPHPNOTB"></div>
+            <div id="miRespuestaPHPNOTB"></div>
+            </section>
+        </div>
+       
+        </main> 
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://jorgearmandosb.000webhostapp.com/img/favico.ico" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+        :root {
+            --azul: #6c63ff;
+            --gray: #3f3d56;
+        }
+
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+
+
+
+        }
+
+        h3{
+            color: var(--azul);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav__logo {
+            width: 120px;
+
+        }
+
+        .nav__button {
+            width: 120px;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: var(--azul);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0px 0px 2px #7b7b7b;
+        }
+
+
+        .page-not-found {
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -60%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .page-not-found__error {
+            height: 500px;
+
+        }
+
+        .page-not-found__title {
+            color: var(--azul);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 4rem;
+            margin-top: 50px;
+            text-shadow: 1px 3px 0 #d1d1d1;
+        }
+
+        .page-not-found__text {
+            color: var(--gray);
+            font-size: 2.5rem;
+            width: 60%;
+            text-align: center;
+            margin: 10px;
+            font-weight: 400;
+            text-shadow: 1px 3px 0 #d1d1d1;
+
+        }
+
+        .page-not-found__cta {
+            padding: 12px 50px;
+            margin: 10px;
+            background-color: var(--azul);
+            text-transform: uppercase;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: .4s;
+            cursor: pointer;
+
+        }
+
+
+        .page-not-found__cta:hover {
+            background: var(--gray);
+
+        }
+
+        @media(max-width:900px) {
+            .page-not-found__error {
+                height: 200px;
+            }
+
+            .page-not-found__title {
+                font-size: 2rem;
+            }
+
+            .page-not-found__text {
+                width: 100%;
+            }
+        }
+
+        @media(max-width:600px) {
+            .nav {
+                padding: 10px;
+            }
+
+            .page-not-found {
+                width: 100%;
+            }
+
+            .page-not-found__error {
+                height: 140px;
+            }
+
+            .page-not-found__title {
+                font-size: 1.4rem;
+            }
+
+            .page-not-found__text {
+                width: 90%;
+            }
+        }
+    </style>
+
+    <title> Page Not Found</title>
+</head>
+
+<body>
+
+
+    <nav class="nav">
+        <a href="#" class="nav__link"><img src="https://jorgearmandosb.000webhostapp.com/img/work-in-progress.png" alt="logo" class="nav__logo"></a>
+
+        <aside><h3>Jorge Armando Silva | comfenalco-github.io</h3></aside>
+    </nav>
+
+
+    <section class="page-not-found">
+        <img src="https://jorgearmandosb.000webhostapp.com/img/undraw_page_not_found_re_e9o6.svg" alt="404 error" class="page-not-found__error">
+
+        <h1 class="page-not-found__title">Page Not Found</h1>
+        <p class="page-not-found__text">Sorry can't find the page</p>
+        <button onclick="host()" class="page-not-found__cta">Back</button>
+    </section>
+
+
+       <script>
+         function host() {
+        location.href = location.protocol + "//" + location.hostname + "/" + location.pathname.split("/")[1];
+      }
+      
+       </script>
+
+</body>
+
+</html>
